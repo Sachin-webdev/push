@@ -1,0 +1,255 @@
+.contactContainer__top {
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.contactContainer__top::before {
+    content: "";
+    background: url(../../Images/bg3.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+
+}
+
+.contact__headingContainer {
+    position: absolute;
+    z-index: -1;
+    top: 13rem;
+}
+
+.contact__heading {
+    color: white !important;
+    font-weight: 500 !important;
+}
+
+.contactConatiner__mid {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 15px 0px 0px 15px;
+
+    overflow: hidden;
+}
+
+.midContactContainer__left {
+    display: flex;
+    flex-direction: column;
+    flex: 0.3;
+}
+
+.midContactContainer__left::before {
+    content: "";
+    background: url(../../Images/bg4.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100vh;
+    width: 20vw;
+    opacity: 1;
+    border-radius: 15px 0px 0px 15px;
+    filter: blur(2px);
+    opacity: 0.9;
+}
+
+.midContactContainer__headingContainer {
+    z-index: 1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+}
+
+.midContactContainer__heading {
+    color: white !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    margin-bottom: 10px !important;
+}
+
+.midContactContainer__headingDesc {
+    color: white !important;
+    font-size: 14px !important;
+    width: 16vmax !important;
+    margin-bottom: 2rem !important;
+
+}
+
+.midcontainer__right {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.rightContainer__heading {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.contact__link {
+    margin-left: 5px;
+}
+
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    width: 55vw;
+}
+
+.rightContainer__title {
+    font-weight: 700 !important;
+    font-size: 28px !important;
+    margin-bottom: 5px !important;
+}
+
+.rightContainer__desc {
+    color: grey !important;
+}
+
+.form__groupLabel {
+    font-weight: 700 !important;
+    margin-bottom: 5px !important;
+
+}
+
+.contactForm>.contactForm__group, textarea {
+    border: 1px solid lightgrey;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    outline: none;
+
+}
+
+.contactBtn {
+    margin-top: 10px !important;
+    width: 15vw;
+}
+
+
+
+@media screen and (min-width : 76rem) {
+    .contactContainer__top {
+        margin-bottom: 20rem;
+    }
+
+    .contactConatiner__mid {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width : 75rem) {
+    .contactContainer__top {
+        margin-bottom: 20rem;
+
+    }
+
+    .contactConatiner__mid {
+        padding: 0;
+        border-radius: 0;
+
+        margin-bottom: 1rem;
+    }
+
+
+    .midContactContainer__left, .midContactContainer__left::before {
+        display: none;
+    }
+
+    .midContactContainer__heading {
+        font-size: 16px !important;
+    }
+
+    .midContactContainer__headingDesc {
+        font-size: 12px !important;
+        width: 25vw !important;
+    }
+
+    .rightContainer__desc {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .contactForm>.contactForm__group, textarea {
+        width: 70%;
+        overflow: hidden;
+    }
+
+    .contactBtn {
+        width: 30vw;
+        font-size: 12px !important;
+    }
+
+    .midcontainer__right {
+        margin: 0;
+        overflow: hidden;
+        padding: 10px;
+    }
+
+    .contactForm {
+        margin: 0;
+        width: 90%;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width : 35rem) {
+
+
+    .contact__heading {
+        font-size: 3rem !important;
+    }
+
+    .contactConatiner__mid {
+        display: flex;
+        border-radius: 0;
+        margin-bottom: 1rem;
+    }
+
+    .midContactContainer__left, .midContactContainer__left::before {
+        display: none;
+    }
+
+    .midContactContainer__headingDesc {
+        font-size: 8px !important;
+        padding: 0;
+    }
+
+    .midcontainer__right {
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .midcontainer__right {
+        padding: 10px;
+    }
+
+    .contactForm {
+        margin: 0;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .contact__link {
+        margin: 0;
+    }
+
+    .contactForm>.contactForm__group, textarea {
+        overflow: hidden;
+        width: 80%;
+    }
+
+    .contactBtn {
+        margin-bottom: 1rem !important;
+        width: 40vw !important;
+    }
+}

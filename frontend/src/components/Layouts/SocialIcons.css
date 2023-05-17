@@ -1,0 +1,12 @@
+.social__icons {
+    font-size: 20px !important;
+}
+
+.social__icons:hover {
+    color: #e3242b !important;
+    
+}
+
+.social__iconsContainer:hover{
+    background-color: #e3242a3b !important;
+}

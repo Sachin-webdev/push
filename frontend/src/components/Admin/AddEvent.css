@@ -1,0 +1,19 @@
+.adminEventContainer {
+    height: 20vh;
+
+}
+
+.formgroup__text>textarea {
+    outline: none;
+    border: none;
+}
+
+.allEventsList {
+    border-top: 1px solid lightgray;
+    background: #ffff;
+}
+
+.eventGrid {
+    margin-left: 17rem;
+    width: 80%;
+}

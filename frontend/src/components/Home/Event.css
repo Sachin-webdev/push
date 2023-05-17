@@ -1,0 +1,132 @@
+.eventContainer {
+    height: 25vh;
+    margin-bottom: 20rem;
+
+}
+
+.eventContainer::before {
+    content: "";
+    background: url(../../Images/bg3.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+.event__headingContainer {
+    position: absolute;
+    z-index: -1;
+    top: 13rem;
+}
+
+.event__heading {
+    z-index: 99999;
+    font-weight: 500 !important;
+
+    color: white !important;
+}
+
+.eventSection1 {
+    background-color: white;
+}
+
+.eventDescription {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.eventDesc {
+    text-align: justify;
+    width: 50vw;
+}
+
+.eventimagecontainer {
+    display: flex;
+    width: 30vw;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.eventImages {
+    margin: 1rem;
+}
+
+.eventImages>img {
+    width: 25vw;
+    height: 40vh;
+}
+
+/* Responsive */
+@media (min-width : 68rem) and (max-width: 95rem) {
+    .eventContainer {
+        margin-bottom: 20rem;
+    }
+}
+
+@media screen and (max-width : 70rem) {
+    .event__heading {
+        font-size: 2rem !important;
+    }
+
+    .eventDescription {
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .eventDesc {
+        width: 100%;
+    }
+
+    .eventimagecontainer {
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .eventImages {
+        width: 30vw;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .eventImages>img {
+        width: 100%;
+
+    }
+
+}
+
+
+@media screen and (max-width : 32rem) {
+    .eventContainer {
+        margin-bottom: 15rem;
+    }
+
+    .eventSection1 {
+        padding: 5px;
+    }
+
+    .eventimagecontainer {
+        width: 100%;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .eventImages {
+        width: 70vw;
+        padding: 0;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .eventImages>img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,274 @@
+.homeContainer {
+    height: 45vmax;
+}
+
+.homeContainer::before {
+    content: "";
+    background: linear-gradient(rgba(0, 0, 0, 0.315), rgba(0, 0, 0, 0.1)), url(../../Images/bg3.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 90%;
+    width: 100%;
+    z-index: -1;
+}
+
+.homeContainer__headingContainer {
+    position: absolute;
+    z-index: -1;
+    top: 20rem;
+    margin-left: 10rem;
+    padding: 10px;
+    width: 35vw;
+}
+
+.homeContainer__heading1, .homeContainer__heading2 {
+    color: white !important;
+    font-weight: 500 !important;
+}
+
+.homeContainer__heading1 {
+    text-align: left;
+    color: #0275d8 !important;
+}
+
+.homeContainer__heading2 {
+    float: right;
+    color: #fff !important;
+    background: #e3242b;
+    width: fit-content;
+    padding: 0 5px;
+    font-size: 1rem !important;
+
+}
+
+.about {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about__description {
+    border: 1px solid lightgray;
+    padding: 10px;
+    width: 80%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.about__descriptionHeader {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.about__heading {
+    font-weight: 700 !important;
+    font-size: 20px !important;
+    border: 2px solid lightgray;
+    padding: 10px;
+    border-radius: 25px;
+    color: gray;
+}
+
+.home__description {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+.about__link {
+    margin: 10px;
+}
+
+.events {
+    margin: 2rem 0;
+    padding: 1rem;
+    background: #fff;
+    align-items: center;
+    text-align: center;
+    height: 60vh;
+}
+
+.upcomingEventsHeading__name {
+    padding: 1rem;
+    font-weight: 600 !important;
+    font-size: 28px !important;
+    color: rgb(68, 68, 68) !important;
+}
+
+.eventCarousel {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(68, 68, 68);
+    align-items: center;
+    height: 45vh;
+    text-decoration: none;
+}
+
+.hover {
+    height: 40vh;
+    width: 26.5vw;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 100;
+    background-color: rgba(230, 230, 230, 0.356);
+    display: none;
+}
+
+.eventCarousel:hover .hover {
+    color: lightgray !important;
+    display: block;
+}
+
+.eventsCarousel {
+    max-width: 40vw;
+    max-height: 50vh;
+    padding: 10px;
+}
+
+.eventTitle {
+    color: rgb(68, 68, 68) !important;
+    text-decoration: underline;
+
+    font-size: 1.5rem !important;
+}
+
+.eventsCarousel>img {
+    width: 25vw;
+    height: 30vh;
+    margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (min-width : 68rem) and (max-width: 100rem) {
+    .homeContainer {
+        margin-bottom: 5rem;
+    }
+
+    .homeContainer__headingContainer {
+        width: 35vw;
+    }
+
+    .eventCarousel {
+        justify-content: center;
+        margin-right: 10px;
+    }
+
+    .card {
+        align-items: center;
+    }
+
+
+}
+
+@media screen and (max-width : 70rem) {
+    .homeContainer {
+        margin-bottom: 30rem;
+    }
+
+    .homeContainer__headingContainer {
+        float: left;
+        width: 40vw;
+        margin-left: 1rem;
+        padding: 1rem;
+    }
+
+    .homeContainer__heading1 {
+        font-size: 2.5rem !important;
+    }
+
+    .about__description {
+        width: 100vw;
+    }
+
+    .upcomingEventsHeading__name{
+        font-size: 1.5rem !important;
+    }
+    .eventCarousel {
+        justify-content: center;
+        margin-right: 10px;
+    }
+
+    .events {
+        width: 110vw;
+    }
+
+    .hover {
+        height: 35vh;
+        width: 21vw;
+    }
+
+    .card {
+        align-items: center;
+        max-width: 80vw;
+    }
+
+    .card>img {
+        max-width: 20vw;
+        min-width: 20vw;
+
+    }
+}
+
+
+@media screen and (max-width : 32rem) {
+
+    .homeContainer {
+        margin-bottom: 5rem;
+    }
+
+    .homeContainer::before {
+        height: 40vh;
+    }
+
+    .homeContainer__headingContainer {
+        float: left;
+        width: 90vw;
+        top: 12rem;
+
+    }
+
+    .homeContainer__heading1 {
+        font-size: 2rem !important;
+        font-weight: 600 !important;
+    }
+
+    .about {
+        margin-top: 0;
+    }
+
+    .about__heading {
+        font-size: 1rem !important;
+    }
+
+    .events {
+        width: 100%;
+    }
+
+    .eventCarousel {
+        justify-content: center;
+        margin-right: 10px;
+    }
+
+    .card {
+        align-items: center;
+        max-width: 80vw;
+    }
+
+    .hover {
+        height: 35vh;
+        width: 60vw;
+    }
+
+    .card>img {
+        max-width: 60vw;
+        min-width: 60vw;
+
+    }
+}

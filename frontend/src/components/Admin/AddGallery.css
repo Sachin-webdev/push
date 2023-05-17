@@ -1,0 +1,113 @@
+.adminGalleryContainer {
+    height: 20vh;
+
+}
+
+.adminGalleryContainer1 {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    padding: 20px;
+}
+
+.galleryFormHeading {
+    margin-bottom: 1rem;
+}
+
+.form__group {
+    margin-bottom: 1rem;
+}
+
+
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    width: 100vw;
+    flex: 0.3;
+}
+
+
+.galleryForm {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form__group1 {
+    margin: 2rem 0;
+    width: 60vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.formgroup__text {
+    margin-top: 1rem;
+    border: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.insertPhotoIcon__input {
+    color: gray;
+}
+
+.formgroup__text>input {
+    margin-left: 1rem;
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.formgroup__text>input::placeholder {
+    font-size: 13px;
+
+}
+
+.formgroup__image {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.formgroup__image>input {
+    display: flex;
+    font-size: 1rem !important;
+}
+
+.formgroup__image>input::file-selector-button {
+    width: 10vw;
+    background-color: gray !important;
+    color: #fff !important;
+    font-size: 1rem !important;
+    margin-right: 1rem;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+}
+
+.noteImage {
+    margin-top: 10px !important;
+    font-size: 12px !important;
+    color: red !important;
+    font-weight: 300 !important;
+}
+
+.formSubmit__gallery {
+    width: 10vw;
+    background-color: #0275d8 !important;
+    color: #fff !important;
+    font-size: 1rem !important;
+}
+
+.Carousel {
+    /* margin-left: 2rem; */
+    max-width: 38rem;
+    flex: 0.8;
+
+}

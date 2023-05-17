@@ -1,0 +1,41 @@
+.image__grid {
+    display: flex;
+}
+
+.galleryImage {
+    width: 20vmax;
+    height: 18vmax;
+    padding: 5px;
+}
+
+.gallery__Title {
+    text-decoration: none;
+    color: black !important;
+    display: flex;
+    align-items: flex-end;
+    font-size: 16px !important;
+
+}
+
+.galleryGrid__heading {
+    margin-top: 10px;
+    display: flex;
+    padding: 20px;
+}
+
+
+@media screen and (max-width : 67rem) {
+    .galleryTitle {
+        font-size: 16px !important;
+    }
+
+}
+
+@media screen and (max-width : 45rem) {
+    .galleryGrid__heading, .galleryTitle {
+        padding: 0;
+        font-size: 14px !important;
+        margin: 0;
+
+    }
+}

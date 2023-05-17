@@ -1,0 +1,101 @@
+.galleryContentContainer {
+    height: 20vh;
+}
+
+
+.div__card {
+
+    padding: 1rem;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.gallery__contentHeading {
+    font-size: 3rem !important;
+    font-weight: 500 !important;
+}
+
+.gallery__headingContainer1 {
+    position: absolute;
+    z-index: -1;
+    top: 13rem;
+}
+
+.image__card {
+    margin-top: 10px;
+    width: 25rem;
+    display: flex;
+    height: 25rem;
+}
+
+
+@media screen and (max-width : 70rem) {
+    .gallery__contentHeading {
+        font-size: 32px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .galleryContent {
+        margin-bottom: 1rem;
+    }
+
+    .gallery__headingContainer1 {
+        width: 90vw;
+        border-bottom: 1px solid lightgray;
+
+    }
+
+    .section__2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div__card {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        place-items: center;
+        gap: 10px;
+    }
+
+
+
+    .image__card {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .image__grid__gallery {
+        width: 35vw;
+        height: 30vh;
+    }
+
+}
+
+@media screen and (max-width : 40rem) {
+    .section__2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .gallery__contentHeading{
+        font-size: 2rem !important;
+    }
+
+
+    .div__card {
+        width: 100%;
+    }
+
+    .image__card {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .image__grid__gallery {
+        width: 38vw;
+        height: 30vh;
+    }
+}

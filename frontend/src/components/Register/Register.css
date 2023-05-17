@@ -1,0 +1,95 @@
+.registerContainer {
+    height: 50vh;
+    padding: 10px 5rem;
+}
+
+.registerContainer::before {
+    content: "";
+    background: url(../../Images/bg3.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+
+
+
+.register__heading {
+    position: absolute;
+    top: 13rem;
+}
+
+.reg__heading {
+    color: white !important;
+    font-weight: 500 !important;
+}
+
+.awardContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem;
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.deadlineContainer, .awardTopDesc1, .awardTopDesc2, .awardDiv, .awardBenefitsContainer {
+    margin: 2.5rem 0 !important;
+}
+
+.awardHeadings {
+    font-weight: 500 !important;
+    font-size: 1.3rem !important;
+    color: rgba(87, 87, 87, 0.9);
+}
+
+.awardDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.awardLink {
+    padding: 10px;
+    width: 20vw;
+    background-color: #0275d8;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0 1rem;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.awardLink:hover {
+    background-color: #e3242b;
+    color: #fff;
+}
+
+.topDescription, .benefitsDescriptions, .benefitsOpportunities, .targetedAudience, .awardAdvantages, .deadlineDate, .awardTypes, .thematicSessions, .awardObjectives, .selectionHeading, .eligibility {
+    font-size: 1.1rem !important;
+    color: rgba(87, 87, 87, 0.9);
+    text-align: justify;
+}
+
+.awardTypes, .thematicSessions, .awardObjectives, .selectionHeading, .eligibility {
+    margin-top: 2rem !important;
+    font-weight: 600 !important;
+}
+
+@media screen and (max-width:90rem) {
+
+    .registerContainer,
+    .registerContainer::before {
+        width: 115vw;
+    }
+}
+
+@media screen and (max-width:50rem) {
+    .registerForm__heading {
+        margin-top: 1rem !important;
+    }
+}

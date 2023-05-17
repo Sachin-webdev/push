@@ -1,0 +1,71 @@
+.delegateBackground {
+    height: 23vmax;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 5em;
+}
+
+.delegateBackground::before {
+    content: "";
+    background: url(../../Images/bg3.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+.delegateHeading {
+    position: absolute;
+    top: 13rem;
+}
+
+.del__heading {
+    color: white !important;
+    font-weight: 500 !important;
+
+}
+
+.delegateFormContainer {
+    margin: 5rem;
+    background: #fff;
+    padding: 20px;
+}
+
+.genderBirthDate {
+    display: flex;
+}
+
+.genderButton {
+    display: flex;
+    flex: 0.3;
+    flex-direction: column;
+    padding: 0;
+}
+
+.genderRadioContainer {
+    display: flex;
+    margin-left: 1.5rem;
+    /* border: 2px solid red; */
+
+}
+
+.inputRadio {
+    margin-right: 10px;
+}
+
+.radioSelect {
+    margin-right: 2.5rem;
+}
+
+.birthDateContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.dob {
+    margin-bottom: 0.5rem;
+}

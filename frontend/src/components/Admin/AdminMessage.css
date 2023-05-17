@@ -1,0 +1,23 @@
+.adminMessageContainer {
+    height: 20vh;
+}
+
+
+.adminMessageContainer1 {
+    display: flex;
+    background: #fff;
+    padding: 20px;
+
+}
+
+
+.messageGrid {
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-left: 20px;
+    display: flex;
+    margin-bottom: 10px;
+}

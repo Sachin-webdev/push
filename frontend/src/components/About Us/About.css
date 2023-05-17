@@ -1,0 +1,232 @@
+.aboutContainer {
+    height: 23vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.aboutContainer::before {
+    content: "";
+    background: url(../../Images/bg3.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+.aboutUs__heading {
+    position: absolute;
+    z-index: -1;
+    top: 13rem;
+}
+
+.abt__heading {
+    color: white !important;
+    font-weight: 500 !important;
+}
+
+.about__descriptionContainer {
+    background-color: #fff;
+    display: flex;
+    padding: 10px 1rem;
+}
+
+.about__descriptionContainer2 {
+    align-items: center;
+}
+
+.about__imgContainer {
+    padding: 10px;
+}
+
+.about__img {
+    width: 20vmax;
+    height: 20vmax;
+}
+
+.about__descriptionHeading1,
+.about__descriptionHeading2 {
+    padding: 15px 25px;
+    display: flex;
+}
+
+.about__descriptionHeading2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.objective__lists {
+    margin: 10px;
+}
+
+.about__heading1,
+.about__heading2 {
+    border: 1px solid lightgrey;
+    border-radius: 30px;
+    padding: 5px;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: rgba(87, 87, 87, 0.9);
+}
+
+.about__desc {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.about__details {
+    padding: 15px 25px;
+    text-align: justify;
+}
+
+.desc {
+    font-size: 16px !important;
+    color: rgba(87, 87, 87, 0.9);
+}
+
+.about__teamsContainer {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px;
+    margin-bottom: 1rem;
+
+}
+
+.about__teamsheading {
+    font-weight: 700 !important;
+    font-size: 32px !important;
+    color: rgba(50, 50, 50, 0.776);
+}
+
+.about__ourTeams {
+    padding: 10px 20px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+@media screen and (min-width : 68rem) {
+    .about__descriptionContainer {
+        margin: 15rem 0 0 0;
+        display: flex;
+    }
+
+    .about__descriptionContainer2 {
+        margin: 2rem 0;
+    }
+
+}
+
+@media screen and (max-width : 67rem) {
+
+
+    .about__descriptionContainer {
+        margin: 20rem 0 0 0;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+
+    }
+
+    .about__descriptionContainer2 {
+        margin: 2rem 0;
+    }
+
+    .about__descriptionContainer {
+        flex-direction: column;
+        margin-left: 0;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .about__details {
+        align-items: flex-start;
+    }
+
+    .about__img {
+        width: 70vw;
+        height: 30vh;
+    }
+
+    .about__descriptionContainer2 {
+        margin: 2rem 0;
+        flex-direction: column-reverse;
+
+    }
+
+    .about__img {
+        height: 40vh;
+        width: 40vw;
+    }
+
+    .about__teamsContainer {
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    .about__ourTeams {
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        margin-top: 10px;
+    }
+
+}
+
+@media screen and (max-width : 45rem) {
+
+    .aboutContainer {
+        height: 20vh;
+    }
+
+    .abt__heading {
+        font-size: 3rem !important;
+
+    }
+
+    .about__teamsheading {
+        margin-top: 10px !important;
+        font-size: 1rem !important;
+    }
+
+    .about__descriptionContainer {
+        flex-direction: column;
+        margin-left: 0;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .about__details {
+        align-items: flex-start;
+    }
+
+    .about__img {
+        width: 70vw;
+        height: 30vh;
+    }
+
+    .about__descriptionContainer2 {
+        margin: 2rem 0;
+        flex-direction: column-reverse;
+
+    }
+
+    .about__teamsContainer {
+        margin: 20px 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .about__ourTeams {
+        display: grid;
+        place-items: center;
+        padding: 0;
+        grid-template-columns: repeat(2, 2fr);
+        margin-top: 10px;
+    }
+}

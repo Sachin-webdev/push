@@ -1,0 +1,78 @@
+.teams__card {
+    width: 20vw;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1rem;
+    background-color: #fff;
+}
+
+
+.team__Profile {
+    height: 10vh;
+    width: 5vw;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.team__name {
+    text-align: center;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: rgba(44, 44, 44, 0.719) !important;
+
+}
+
+.team__designation {
+    text-align: center;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    color: gray !important;
+}
+
+.team__description {
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    color: gray !important;
+    text-align: justify;
+}
+
+.showMore {
+    font-size: 12px;
+    color: #0275d8;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width : 67rem) {
+    .teams__card {
+        width: 20vw;
+        margin: 15px 10px;
+    }
+
+    .team__Profile {
+        height: 10vh;
+        width: 10vw;
+    }
+
+    .team__name, .team__designation {
+        font-size: 10px !important;
+    }
+}
+
+@media screen and (max-width : 45rem) {
+
+    .teams__card {
+        width: 30vw;
+    }
+
+    .team__Profile {
+        height: 10vh;
+        width: 20vw;
+    }
+
+    .team__name, .team__designation {
+        font-size: 10px !important;
+    }
+}
